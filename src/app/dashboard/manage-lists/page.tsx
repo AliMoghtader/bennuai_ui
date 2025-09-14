@@ -54,7 +54,7 @@ export default function ManageListsPage() {
     <div className="flex min-h-screen bg-gray-50">
       <div className="flex-1 p-6">
         <h1 className="text-2xl font-bold mb-6 text-gray-800">Manage Lists</h1>
-
+        
         {loading ? (
           <LoadingSkeleton />
         ) : error ? (
@@ -90,7 +90,7 @@ export default function ManageListsPage() {
               ))}
             </div>
 
-            {/* Refresh button below content */}
+              {/* Refresh Button */}
             <div className="flex justify-center mt-6">
               <button
                 onClick={loadData}

@@ -6,7 +6,7 @@ import Sidebar from './Sidebar'
 export default function ManageListsPage() {
   const token = cookies().get('auth-token')?.value
   if (!token) redirect('/login')
-
+// Content of Dashboard panel, Sidebar not included
   return (
     <div className="min-h-screen flex">
       <div className="flex-1  bg-gray-50 p-6">
